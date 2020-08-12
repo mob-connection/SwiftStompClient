@@ -1,4 +1,4 @@
-# StompClient
+# SwiftStompClient
 ---
 StompClien it's implementation [STOMP](https://stomp.github.io) on native [WebSocket](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) started support from iOS 13
 
@@ -16,7 +16,7 @@ StompClien it's implementation [STOMP](https://stomp.github.io) on native [WebSo
 let request = URLRequest(url: "wss://,ws://")
 let webSocket = WebSocket(request: request)
 let heartBeat = HeartBeat(clientHeartBeating: "2000,5000")
-let stompClient = StompClient(webSocket: webSocket, heartBeat: heartBeat)
+let stompClient = SwiftStompClient(webSocket: webSocket, heartBeat: heartBeat)
 
 stompClient.stompDelegate = self
 stompClient.openWebSocketConnection()
