@@ -14,20 +14,20 @@ public class WebSocket: NSObject {
     }()
     
     ///Operation queue by default set maximum concurrent operation count
-    var delegateQueue = OperationQueue()
+    public var delegateQueue = OperationQueue()
     
     ///WebSocket task
-    var sessionWebSocketTask: URLSessionWebSocketTask!
+    public var sessionWebSocketTask: URLSessionWebSocketTask!
     
     ///WebSocket delegate
-    weak var webSocketDelegate: WebSocketProtocol?
+    public weak var webSocketDelegate: WebSocketProtocol?
     
-    private(set) var isConnected = false
+    public private(set) var isConnected = false
 
     ///Init with request
     /// - Parameters:
     ///     - request: must contain ws:// or wss://
-    init(request: URLRequest) {
+    public init(request: URLRequest) {
         super.init()
         self.sessionWebSocketTask = urlSession.webSocketTask(with: request)
     }
@@ -36,7 +36,7 @@ public class WebSocket: NSObject {
     /// - Parameters:
     ///     - onSuccess: success send ping frame
     ///     - onError: error with Error
-    func webSocketSendPing(onSuccess: @escaping (() -> Void), onError: @escaping ((Error) -> Void)) {
+    public func webSocketSendPing(onSuccess: @escaping (() -> Void), onError: @escaping ((Error) -> Void)) {
         sessionWebSocketTask.sendPing(pongReceiveHandler: {
             $0 == nil ? onSuccess() : onError($0!)
         })
@@ -47,7 +47,7 @@ public class WebSocket: NSObject {
     ///     - message: URLSessionWebSocketTask.Message
     ///     - onSuccess: successed send webSocket message
     ///     - onError: error with Error
-    func webSocketSend(message: URLSessionWebSocketTask.Message, onResult: @escaping ((Result<Void, Error>) -> Void)) {
+    public func webSocketSend(message: URLSessionWebSocketTask.Message, onResult: @escaping ((Result<Void, Error>) -> Void)) {
         sessionWebSocketTask.send(message, completionHandler: { error in
             let result: Result<Void, Error> = .init(catching: {
                 return
@@ -57,13 +57,13 @@ public class WebSocket: NSObject {
     }
     
     ///Connect webSocket connection
-    func connect() {
+    public func connect() {
         webSocketReceive()
         sessionWebSocketTask.resume()
     }
     
     ///Disconnect webSocket connection
-    func disconnect(code: URLSessionWebSocketTask.CloseCode, reason: Data?) {
+    public func disconnect(code: URLSessionWebSocketTask.CloseCode, reason: Data?) {
         sessionWebSocketTask.cancel(with: code, reason: reason)
     }
     
