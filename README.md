@@ -35,3 +35,9 @@ stompClient.openWebSocketConnection()
 ```closeWebSocketConnection()``` disconnect webSocket connection, handle disconnect webSocket ```func handleWebSocketDisconnect(session: URLSession, webSocketTask: URLSessionWebSocketTask, closeCode: URLSessionWebSocketTask.CloseCode, reason: Data?)```
 
 ```sendFrame(frame: StompFrameProtocol)``` send STOMP frame via websocket, for sending custom frame (if needed) just subsribe object to `StompFrameProtocol`
+
+## Installation
+### CocoaPods
+`
+pod 'SwiftStompClient', '~> 0.0.2'
+`
