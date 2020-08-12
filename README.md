@@ -1,6 +1,6 @@
 # SwiftStompClient
 ---
-StompClien it's implementation [STOMP](https://stomp.github.io) on native [WebSocket](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) started support from iOS 13
+SwiftStompClient it's implementation [STOMP](https://stomp.github.io) on native [WebSocket](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) started support from iOS 13
 
 ## Requirements
 ---
