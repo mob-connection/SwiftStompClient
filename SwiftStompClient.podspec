@@ -1,8 +1,12 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SwiftStompClient"
-  spec.version      = "0.0.1"
-  spec.summary      = "STOMP implementation with optional heart-beating iOS 13.0+ macOS 10.15+ Mac Catalyst 13.0+ tvOS 13.0+ watchOS 6.0+"
+  spec.version      = "0.0.2"
+  spec.summary      = "STOMP implementation on native WebSocket in Swift"
+  
+    spec.description  = <<-DESC
+STOMP implementation with optional heart-beating iOS 13.0+ macOS 10.15+ Mac Catalyst 13.0+ tvOS 13.0+ watchOS 6.0+
+                     DESC
 
   spec.homepage     = "https://github.com/mob-connection/SwiftStompClient"
 
