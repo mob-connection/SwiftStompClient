@@ -1,9 +1,7 @@
 # SwiftStompClient
----
 SwiftStompClient it's implementation [STOMP](https://stomp.github.io) on native [WebSocket](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) started support from iOS 13
 
 ## Requirements
----
  - iOS 13.0+
  - macOS 10.15+
  - Mac Catalyst 13.0+
@@ -11,7 +9,6 @@ SwiftStompClient it's implementation [STOMP](https://stomp.github.io) on native 
  - watchOS 6.0+
  
 ## Example using StompClient
----
 ```swift
 let request = URLRequest(url: "wss://,ws://")
 let webSocket = WebSocket(request: request)
