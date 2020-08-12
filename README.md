@@ -36,5 +36,5 @@ stompClient.openWebSocketConnection()
 ## Installation
 ### CocoaPods
 `
-pod 'SwiftStompClient', '~> 0.0.2'
+pod 'SwiftStompClient', '~> 0.0.3'
 `
