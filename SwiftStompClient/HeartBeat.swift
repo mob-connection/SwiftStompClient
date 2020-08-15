@@ -33,6 +33,17 @@ public class HeartBeat {
         }
     }
     
+    public func cancelAllTimers() {
+        timerPong?.setEventHandler(handler: nil)
+        timerPong?.cancel()
+        timerPong = nil
+        pongAction = nil
+        //
+        timerPing.setEventHandler(handler: nil)
+        timerPing.cancel()
+        pingAction = nil
+    }
+    
     ///reset timer for sending DISCONNECT stomp frame
     private func resetListeningServerBeating() {
         timerPong?.setEventHandler(handler: nil)
@@ -48,17 +59,6 @@ public class HeartBeat {
         timerPong?.schedule(deadline: .now() + pongTime, repeating: pongTime, leeway: leeway)
         timerPong?.setEventHandler(handler: pongAction)
         timerPong?.resume()
-    }
-    
-    private func stomAllTimers() {
-        timerPong?.setEventHandler(handler: nil)
-        timerPong?.cancel()
-        timerPong = nil
-        pongAction = nil
-        //
-        timerPing.setEventHandler(handler: nil)
-        timerPing.cancel()
-        pingAction = nil
     }
     
     ///Heart-beart implemetation looks like "5000,5000" were first part in client time beating, second part server time beating(miliseconds)
