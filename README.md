@@ -33,6 +33,12 @@ stompClient.openWebSocketConnection()
 
 ```sendFrame(frame: StompFrameProtocol)``` send STOMP frame via websocket, for sending custom frame (if needed) just subsribe object to `StompFrameProtocol`
 
+## STOMP server example
+open terminal run 
+`$ java -jar stomp-server.jar`
+server works on 
+`ws://127.0.0.1:8080/ws`
+
 ## Installation
 ### CocoaPods
 `
