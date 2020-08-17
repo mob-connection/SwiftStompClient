@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SwiftStompClient"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "STOMP implementation on native WebSocket in Swift"
   
     spec.description  = <<-DESC
