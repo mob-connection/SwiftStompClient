@@ -42,5 +42,5 @@ server works on
 ## Installation
 ### CocoaPods
 `
-pod 'SwiftStompClient', '~> 0.0.4'
+pod 'SwiftStompClient', '~> 0.0.5'
 `
