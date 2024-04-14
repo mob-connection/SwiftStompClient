@@ -5,7 +5,7 @@ Swift [STOMP](https://stomp.github.io) client for swift via [WebSocketTask](http
 ## Requirements
 
  - iOS 15.0+
- - macOS 12.0+
+ - macOS 12.00+
  - tvOS 15.0+
  - watchOS 8.0+
 
@@ -16,7 +16,8 @@ Swift [STOMP](https://stomp.github.io) client for swift via [WebSocketTask](http
 
 ## Example using StompClient
 
-```swift let webSocket: WebSocketService = WebSocketManager(request: URLRequest(url: NetworkConstants.baseSTOMP))
+```swift
+let webSocket: WebSocketService = WebSocketManager(request: URLRequest(url: NetworkConstants.baseSTOMP))
 let heartBeat: HeartBeatService = HeartBeatManager(clientHeartBeating: "2000,5000", clientSendingLeeway: 0.0)
 let stompClient: SwiftStompClient = .init(webSocket: webSocket, heartBeat: heartBeat)
 
@@ -26,7 +27,7 @@ try await stompClient.openWebSocketConnection()
 
 ## WebSocketService
 
-native webSocket implementation via ```swift URLSessionWebSocketTask```
+native webSocket implementation via ```URLSessionWebSocketTask```
 
 ## HeartBeatService
 
