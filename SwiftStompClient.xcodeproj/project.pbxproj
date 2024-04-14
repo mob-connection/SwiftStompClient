@@ -7,74 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3723104A2B7116C60014D957 /* FrameResponseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372310492B7116C60014D957 /* FrameResponseKeys.swift */; };
-		3723104B2B7117090014D957 /* FrameResponseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372310492B7116C60014D957 /* FrameResponseKeys.swift */; };
-		373221D924E3015F0004C746 /* SwiftStompClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 373221D724E3015F0004C746 /* SwiftStompClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		373221F024E302C30004C746 /* DisconnectStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221DF24E302C30004C746 /* DisconnectStompFrame.swift */; };
-		373221F124E302C30004C746 /* BasicCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E024E302C30004C746 /* BasicCommands.swift */; };
-		373221F224E302C30004C746 /* UnsubscribeStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E124E302C30004C746 /* UnsubscribeStompFrame.swift */; };
-		373221F324E302C30004C746 /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E224E302C30004C746 /* WebSocketService.swift */; };
-		373221F424E302C30004C746 /* SubscribeStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E324E302C30004C746 /* SubscribeStompFrame.swift */; };
-		373221F524E302C30004C746 /* SendStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E424E302C30004C746 /* SendStompFrame.swift */; };
-		373221F624E302C30004C746 /* HeartBeatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E524E302C30004C746 /* HeartBeatService.swift */; };
-		373221F724E302C30004C746 /* ConnectStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E624E302C30004C746 /* ConnectStompFrame.swift */; };
-		373221F824E302C30004C746 /* AckStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E724E302C30004C746 /* AckStompFrame.swift */; };
-		373221F924E302C30004C746 /* PingStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E824E302C30004C746 /* PingStompFrame.swift */; };
-		373221FA24E302C30004C746 /* HeaderCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E924E302C30004C746 /* HeaderCommands.swift */; };
-		373221FB24E302C30004C746 /* StompFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EA24E302C30004C746 /* StompFrameProtocol.swift */; };
-		373221FC24E302C30004C746 /* SwiftStompClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EB24E302C30004C746 /* SwiftStompClient.swift */; };
-		373221FD24E302C30004C746 /* AckMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EC24E302C30004C746 /* AckMode.swift */; };
-		373221FE24E302C30004C746 /* BeginStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221ED24E302C30004C746 /* BeginStompFrame.swift */; };
-		373221FF24E302C30004C746 /* AbortStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EE24E302C30004C746 /* AbortStompFrame.swift */; };
-		3732220024E302C30004C746 /* CommitStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EF24E302C30004C746 /* CommitStompFrame.swift */; };
 		3732220824E303940004C746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3732220724E303940004C746 /* AppDelegate.swift */; platformFilter = ios; };
 		3732220A24E303940004C746 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3732220924E303940004C746 /* SceneDelegate.swift */; platformFilter = ios; };
 		3732220C24E303940004C746 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3732220B24E303940004C746 /* ViewController.swift */; platformFilter = ios; };
 		3732220F24E303940004C746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3732220D24E303940004C746 /* Main.storyboard */; platformFilter = ios; };
 		3732221124E303950004C746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3732221024E303950004C746 /* Assets.xcassets */; };
 		3732221424E303950004C746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3732221224E303950004C746 /* LaunchScreen.storyboard */; platformFilter = ios; };
-		3732221A24E306700004C746 /* AbortStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EE24E302C30004C746 /* AbortStompFrame.swift */; };
-		3732221B24E306700004C746 /* AckMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EC24E302C30004C746 /* AckMode.swift */; };
-		3732221C24E306700004C746 /* AckStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E724E302C30004C746 /* AckStompFrame.swift */; };
-		3732221D24E306700004C746 /* BasicCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E024E302C30004C746 /* BasicCommands.swift */; };
-		3732221E24E306700004C746 /* BeginStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221ED24E302C30004C746 /* BeginStompFrame.swift */; };
-		3732221F24E306700004C746 /* CommitStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EF24E302C30004C746 /* CommitStompFrame.swift */; };
-		3732222024E306700004C746 /* ConnectStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E624E302C30004C746 /* ConnectStompFrame.swift */; };
-		3732222124E306700004C746 /* DisconnectStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221DF24E302C30004C746 /* DisconnectStompFrame.swift */; };
-		3732222224E306700004C746 /* HeaderCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E924E302C30004C746 /* HeaderCommands.swift */; };
-		3732222324E306700004C746 /* HeartBeatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E524E302C30004C746 /* HeartBeatService.swift */; };
-		3732222424E306700004C746 /* PingStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E824E302C30004C746 /* PingStompFrame.swift */; };
-		3732222524E306700004C746 /* SendStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E424E302C30004C746 /* SendStompFrame.swift */; };
-		3732222624E306700004C746 /* SwiftStompClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EB24E302C30004C746 /* SwiftStompClient.swift */; };
-		3732222724E306700004C746 /* StompFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221EA24E302C30004C746 /* StompFrameProtocol.swift */; };
-		3732222824E306700004C746 /* SubscribeStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E324E302C30004C746 /* SubscribeStompFrame.swift */; };
-		3732222924E306700004C746 /* UnsubscribeStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E124E302C30004C746 /* UnsubscribeStompFrame.swift */; };
-		3732222A24E306700004C746 /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373221E224E302C30004C746 /* WebSocketService.swift */; };
-		37CA7C7B2BCC098400276577 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 37D981082BCB33AF000CE93A /* PrivacyInfo.xcprivacy */; };
+		376285CA2BCC8D3700B7F9AE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 376285C12BCC8D2600B7F9AE /* PrivacyInfo.xcprivacy */; };
+		376285CB2BCC8DAF00B7F9AE /* DisconnectStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BB2BCC8D2600B7F9AE /* DisconnectStompFrame.swift */; };
+		376285CC2BCC8DAF00B7F9AE /* SendStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C22BCC8D2600B7F9AE /* SendStompFrame.swift */; };
+		376285CD2BCC8DAF00B7F9AE /* CommitStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B92BCC8D2600B7F9AE /* CommitStompFrame.swift */; };
+		376285CE2BCC8DAF00B7F9AE /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C72BCC8D2600B7F9AE /* WebSocketService.swift */; };
+		376285CF2BCC8DAF00B7F9AE /* HeaderCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BD2BCC8D2600B7F9AE /* HeaderCommands.swift */; };
+		376285D02BCC8DAF00B7F9AE /* SubscribeStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C42BCC8D2600B7F9AE /* SubscribeStompFrame.swift */; };
+		376285D12BCC8DAF00B7F9AE /* BasicCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B72BCC8D2600B7F9AE /* BasicCommands.swift */; };
+		376285D22BCC8DAF00B7F9AE /* BeginStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B82BCC8D2600B7F9AE /* BeginStompFrame.swift */; };
+		376285D32BCC8DAF00B7F9AE /* HeartBeatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BE2BCC8D2600B7F9AE /* HeartBeatService.swift */; };
+		376285D42BCC8DAF00B7F9AE /* SwiftStompClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C52BCC8D2600B7F9AE /* SwiftStompClient.swift */; };
+		376285D52BCC8DAF00B7F9AE /* AckStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B62BCC8D2600B7F9AE /* AckStompFrame.swift */; };
+		376285D62BCC8DAF00B7F9AE /* PingStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C02BCC8D2600B7F9AE /* PingStompFrame.swift */; };
+		376285D72BCC8DAF00B7F9AE /* AckMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B52BCC8D2600B7F9AE /* AckMode.swift */; };
+		376285D82BCC8DAF00B7F9AE /* UnsubscribeStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C62BCC8D2600B7F9AE /* UnsubscribeStompFrame.swift */; };
+		376285D92BCC8DAF00B7F9AE /* ConnectStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BA2BCC8D2600B7F9AE /* ConnectStompFrame.swift */; };
+		376285DA2BCC8DAF00B7F9AE /* AbortStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B42BCC8D2600B7F9AE /* AbortStompFrame.swift */; };
+		376285DB2BCC8DAF00B7F9AE /* FrameResponseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BC2BCC8D2600B7F9AE /* FrameResponseKeys.swift */; };
+		376285DC2BCC8DAF00B7F9AE /* StompFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C32BCC8D2600B7F9AE /* StompFrameProtocol.swift */; };
+		376285DD2BCC8DF400B7F9AE /* HeartBeatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BE2BCC8D2600B7F9AE /* HeartBeatService.swift */; };
+		376285DE2BCC8DF400B7F9AE /* ConnectStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BA2BCC8D2600B7F9AE /* ConnectStompFrame.swift */; };
+		376285DF2BCC8DF400B7F9AE /* SwiftStompClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C52BCC8D2600B7F9AE /* SwiftStompClient.swift */; };
+		376285E02BCC8DF400B7F9AE /* BasicCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B72BCC8D2600B7F9AE /* BasicCommands.swift */; };
+		376285E12BCC8DF400B7F9AE /* AckMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B52BCC8D2600B7F9AE /* AckMode.swift */; };
+		376285E22BCC8DF400B7F9AE /* AbortStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B42BCC8D2600B7F9AE /* AbortStompFrame.swift */; };
+		376285E32BCC8DF400B7F9AE /* DisconnectStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BB2BCC8D2600B7F9AE /* DisconnectStompFrame.swift */; };
+		376285E42BCC8DF400B7F9AE /* BeginStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B82BCC8D2600B7F9AE /* BeginStompFrame.swift */; };
+		376285E52BCC8DF400B7F9AE /* FrameResponseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BC2BCC8D2600B7F9AE /* FrameResponseKeys.swift */; };
+		376285E62BCC8DF400B7F9AE /* PingStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C02BCC8D2600B7F9AE /* PingStompFrame.swift */; };
+		376285E72BCC8DF400B7F9AE /* SubscribeStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C42BCC8D2600B7F9AE /* SubscribeStompFrame.swift */; };
+		376285E82BCC8DF400B7F9AE /* CommitStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B92BCC8D2600B7F9AE /* CommitStompFrame.swift */; };
+		376285E92BCC8DF400B7F9AE /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C72BCC8D2600B7F9AE /* WebSocketService.swift */; };
+		376285EA2BCC8DF400B7F9AE /* StompFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C32BCC8D2600B7F9AE /* StompFrameProtocol.swift */; };
+		376285EB2BCC8DF400B7F9AE /* UnsubscribeStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C62BCC8D2600B7F9AE /* UnsubscribeStompFrame.swift */; };
+		376285EC2BCC8DF400B7F9AE /* AckStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285B62BCC8D2600B7F9AE /* AckStompFrame.swift */; };
+		376285ED2BCC8DF400B7F9AE /* HeaderCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285BD2BCC8D2600B7F9AE /* HeaderCommands.swift */; };
+		376285EE2BCC8DF400B7F9AE /* SendStompFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376285C22BCC8D2600B7F9AE /* SendStompFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		372310492B7116C60014D957 /* FrameResponseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameResponseKeys.swift; sourceTree = "<group>"; };
 		373221D424E3015F0004C746 /* SwiftStompClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftStompClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		373221D724E3015F0004C746 /* SwiftStompClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftStompClient.h; sourceTree = "<group>"; };
-		373221D824E3015F0004C746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		373221DF24E302C30004C746 /* DisconnectStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisconnectStompFrame.swift; sourceTree = "<group>"; };
-		373221E024E302C30004C746 /* BasicCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCommands.swift; sourceTree = "<group>"; };
-		373221E124E302C30004C746 /* UnsubscribeStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsubscribeStompFrame.swift; sourceTree = "<group>"; };
-		373221E224E302C30004C746 /* WebSocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
-		373221E324E302C30004C746 /* SubscribeStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeStompFrame.swift; sourceTree = "<group>"; };
-		373221E424E302C30004C746 /* SendStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendStompFrame.swift; sourceTree = "<group>"; };
-		373221E524E302C30004C746 /* HeartBeatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartBeatService.swift; sourceTree = "<group>"; };
-		373221E624E302C30004C746 /* ConnectStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectStompFrame.swift; sourceTree = "<group>"; };
-		373221E724E302C30004C746 /* AckStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AckStompFrame.swift; sourceTree = "<group>"; };
-		373221E824E302C30004C746 /* PingStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingStompFrame.swift; sourceTree = "<group>"; };
-		373221E924E302C30004C746 /* HeaderCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCommands.swift; sourceTree = "<group>"; };
-		373221EA24E302C30004C746 /* StompFrameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StompFrameProtocol.swift; sourceTree = "<group>"; };
-		373221EB24E302C30004C746 /* SwiftStompClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStompClient.swift; sourceTree = "<group>"; };
-		373221EC24E302C30004C746 /* AckMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AckMode.swift; sourceTree = "<group>"; };
-		373221ED24E302C30004C746 /* BeginStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginStompFrame.swift; sourceTree = "<group>"; };
-		373221EE24E302C30004C746 /* AbortStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbortStompFrame.swift; sourceTree = "<group>"; };
-		373221EF24E302C30004C746 /* CommitStompFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitStompFrame.swift; sourceTree = "<group>"; };
 		3732220524E303940004C746 /* SwiftStompClientExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStompClientExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3732220724E303940004C746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3732220924E303940004C746 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +63,29 @@
 		3732221324E303950004C746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3732221524E303950004C746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3732221924E304C00004C746 /* SwiftStompClientExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftStompClientExample.entitlements; sourceTree = "<group>"; };
-		37D981082BCB33AF000CE93A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		376285B42BCC8D2600B7F9AE /* AbortStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbortStompFrame.swift; sourceTree = "<group>"; };
+		376285B52BCC8D2600B7F9AE /* AckMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AckMode.swift; sourceTree = "<group>"; };
+		376285B62BCC8D2600B7F9AE /* AckStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AckStompFrame.swift; sourceTree = "<group>"; };
+		376285B72BCC8D2600B7F9AE /* BasicCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCommands.swift; sourceTree = "<group>"; };
+		376285B82BCC8D2600B7F9AE /* BeginStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginStompFrame.swift; sourceTree = "<group>"; };
+		376285B92BCC8D2600B7F9AE /* CommitStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitStompFrame.swift; sourceTree = "<group>"; };
+		376285BA2BCC8D2600B7F9AE /* ConnectStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectStompFrame.swift; sourceTree = "<group>"; };
+		376285BB2BCC8D2600B7F9AE /* DisconnectStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectStompFrame.swift; sourceTree = "<group>"; };
+		376285BC2BCC8D2600B7F9AE /* FrameResponseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameResponseKeys.swift; sourceTree = "<group>"; };
+		376285BD2BCC8D2600B7F9AE /* HeaderCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCommands.swift; sourceTree = "<group>"; };
+		376285BE2BCC8D2600B7F9AE /* HeartBeatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartBeatService.swift; sourceTree = "<group>"; };
+		376285BF2BCC8D2600B7F9AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		376285C02BCC8D2600B7F9AE /* PingStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingStompFrame.swift; sourceTree = "<group>"; };
+		376285C12BCC8D2600B7F9AE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		376285C22BCC8D2600B7F9AE /* SendStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendStompFrame.swift; sourceTree = "<group>"; };
+		376285C32BCC8D2600B7F9AE /* StompFrameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StompFrameProtocol.swift; sourceTree = "<group>"; };
+		376285C42BCC8D2600B7F9AE /* SubscribeStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeStompFrame.swift; sourceTree = "<group>"; };
+		376285C52BCC8D2600B7F9AE /* SwiftStompClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStompClient.swift; sourceTree = "<group>"; };
+		376285C62BCC8D2600B7F9AE /* UnsubscribeStompFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsubscribeStompFrame.swift; sourceTree = "<group>"; };
+		376285C72BCC8D2600B7F9AE /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
+		37CBBD362BCC8AC7004FC65C /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		37E77A442BCC96360093B194 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		37E77A452BCC96470093B194 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +109,10 @@
 		373221CA24E3015F0004C746 = {
 			isa = PBXGroup;
 			children = (
-				373221D624E3015F0004C746 /* SwiftStompClient */,
+				37E77A442BCC96360093B194 /* README.md */,
+				37E77A452BCC96470093B194 /* LICENSE */,
+				37CBBD362BCC8AC7004FC65C /* Package.swift */,
+				376285C82BCC8D2600B7F9AE /* Sources */,
 				3732220624E303940004C746 /* SwiftStompClientExample */,
 				373221D524E3015F0004C746 /* Products */,
 			);
@@ -121,34 +125,6 @@
 				3732220524E303940004C746 /* SwiftStompClientExample.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		373221D624E3015F0004C746 /* SwiftStompClient */ = {
-			isa = PBXGroup;
-			children = (
-				373221D724E3015F0004C746 /* SwiftStompClient.h */,
-				373221D824E3015F0004C746 /* Info.plist */,
-				37D981082BCB33AF000CE93A /* PrivacyInfo.xcprivacy */,
-				373221EE24E302C30004C746 /* AbortStompFrame.swift */,
-				373221EC24E302C30004C746 /* AckMode.swift */,
-				373221E724E302C30004C746 /* AckStompFrame.swift */,
-				373221E024E302C30004C746 /* BasicCommands.swift */,
-				373221ED24E302C30004C746 /* BeginStompFrame.swift */,
-				373221EF24E302C30004C746 /* CommitStompFrame.swift */,
-				373221E624E302C30004C746 /* ConnectStompFrame.swift */,
-				373221DF24E302C30004C746 /* DisconnectStompFrame.swift */,
-				373221E924E302C30004C746 /* HeaderCommands.swift */,
-				373221E824E302C30004C746 /* PingStompFrame.swift */,
-				373221E424E302C30004C746 /* SendStompFrame.swift */,
-				372310492B7116C60014D957 /* FrameResponseKeys.swift */,
-				373221EA24E302C30004C746 /* StompFrameProtocol.swift */,
-				373221E324E302C30004C746 /* SubscribeStompFrame.swift */,
-				373221E124E302C30004C746 /* UnsubscribeStompFrame.swift */,
-				373221EB24E302C30004C746 /* SwiftStompClient.swift */,
-				373221E524E302C30004C746 /* HeartBeatService.swift */,
-				373221E224E302C30004C746 /* WebSocketService.swift */,
-			);
-			path = SwiftStompClient;
 			sourceTree = "<group>";
 		};
 		3732220624E303940004C746 /* SwiftStompClientExample */ = {
@@ -166,6 +142,33 @@
 			path = SwiftStompClientExample;
 			sourceTree = "<group>";
 		};
+		376285C82BCC8D2600B7F9AE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				376285BF2BCC8D2600B7F9AE /* Info.plist */,
+				376285C12BCC8D2600B7F9AE /* PrivacyInfo.xcprivacy */,
+				376285B42BCC8D2600B7F9AE /* AbortStompFrame.swift */,
+				376285B52BCC8D2600B7F9AE /* AckMode.swift */,
+				376285B62BCC8D2600B7F9AE /* AckStompFrame.swift */,
+				376285B72BCC8D2600B7F9AE /* BasicCommands.swift */,
+				376285B82BCC8D2600B7F9AE /* BeginStompFrame.swift */,
+				376285B92BCC8D2600B7F9AE /* CommitStompFrame.swift */,
+				376285BA2BCC8D2600B7F9AE /* ConnectStompFrame.swift */,
+				376285BB2BCC8D2600B7F9AE /* DisconnectStompFrame.swift */,
+				376285BC2BCC8D2600B7F9AE /* FrameResponseKeys.swift */,
+				376285BD2BCC8D2600B7F9AE /* HeaderCommands.swift */,
+				376285BE2BCC8D2600B7F9AE /* HeartBeatService.swift */,
+				376285C02BCC8D2600B7F9AE /* PingStompFrame.swift */,
+				376285C22BCC8D2600B7F9AE /* SendStompFrame.swift */,
+				376285C32BCC8D2600B7F9AE /* StompFrameProtocol.swift */,
+				376285C42BCC8D2600B7F9AE /* SubscribeStompFrame.swift */,
+				376285C52BCC8D2600B7F9AE /* SwiftStompClient.swift */,
+				376285C62BCC8D2600B7F9AE /* UnsubscribeStompFrame.swift */,
+				376285C72BCC8D2600B7F9AE /* WebSocketService.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -173,7 +176,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				373221D924E3015F0004C746 /* SwiftStompClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37CA7C7B2BCC098400276577 /* PrivacyInfo.xcprivacy in Resources */,
+				376285CA2BCC8D3700B7F9AE /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,24 +281,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				373221F124E302C30004C746 /* BasicCommands.swift in Sources */,
-				373221F524E302C30004C746 /* SendStompFrame.swift in Sources */,
-				3723104A2B7116C60014D957 /* FrameResponseKeys.swift in Sources */,
-				373221FD24E302C30004C746 /* AckMode.swift in Sources */,
-				373221F724E302C30004C746 /* ConnectStompFrame.swift in Sources */,
-				373221FB24E302C30004C746 /* StompFrameProtocol.swift in Sources */,
-				373221FC24E302C30004C746 /* SwiftStompClient.swift in Sources */,
-				373221FF24E302C30004C746 /* AbortStompFrame.swift in Sources */,
-				373221FE24E302C30004C746 /* BeginStompFrame.swift in Sources */,
-				373221F324E302C30004C746 /* WebSocketService.swift in Sources */,
-				373221F024E302C30004C746 /* DisconnectStompFrame.swift in Sources */,
-				373221F924E302C30004C746 /* PingStompFrame.swift in Sources */,
-				373221FA24E302C30004C746 /* HeaderCommands.swift in Sources */,
-				373221F224E302C30004C746 /* UnsubscribeStompFrame.swift in Sources */,
-				373221F824E302C30004C746 /* AckStompFrame.swift in Sources */,
-				3732220024E302C30004C746 /* CommitStompFrame.swift in Sources */,
-				373221F424E302C30004C746 /* SubscribeStompFrame.swift in Sources */,
-				373221F624E302C30004C746 /* HeartBeatService.swift in Sources */,
+				376285CB2BCC8DAF00B7F9AE /* DisconnectStompFrame.swift in Sources */,
+				376285CC2BCC8DAF00B7F9AE /* SendStompFrame.swift in Sources */,
+				376285CD2BCC8DAF00B7F9AE /* CommitStompFrame.swift in Sources */,
+				376285CE2BCC8DAF00B7F9AE /* WebSocketService.swift in Sources */,
+				376285CF2BCC8DAF00B7F9AE /* HeaderCommands.swift in Sources */,
+				376285D02BCC8DAF00B7F9AE /* SubscribeStompFrame.swift in Sources */,
+				376285D12BCC8DAF00B7F9AE /* BasicCommands.swift in Sources */,
+				376285D22BCC8DAF00B7F9AE /* BeginStompFrame.swift in Sources */,
+				376285D32BCC8DAF00B7F9AE /* HeartBeatService.swift in Sources */,
+				376285D42BCC8DAF00B7F9AE /* SwiftStompClient.swift in Sources */,
+				376285D52BCC8DAF00B7F9AE /* AckStompFrame.swift in Sources */,
+				376285D62BCC8DAF00B7F9AE /* PingStompFrame.swift in Sources */,
+				376285D72BCC8DAF00B7F9AE /* AckMode.swift in Sources */,
+				376285D82BCC8DAF00B7F9AE /* UnsubscribeStompFrame.swift in Sources */,
+				376285D92BCC8DAF00B7F9AE /* ConnectStompFrame.swift in Sources */,
+				376285DA2BCC8DAF00B7F9AE /* AbortStompFrame.swift in Sources */,
+				376285DB2BCC8DAF00B7F9AE /* FrameResponseKeys.swift in Sources */,
+				376285DC2BCC8DAF00B7F9AE /* StompFrameProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,27 +306,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3732222624E306700004C746 /* SwiftStompClient.swift in Sources */,
-				3732221D24E306700004C746 /* BasicCommands.swift in Sources */,
+				376285DD2BCC8DF400B7F9AE /* HeartBeatService.swift in Sources */,
+				376285DE2BCC8DF400B7F9AE /* ConnectStompFrame.swift in Sources */,
+				376285DF2BCC8DF400B7F9AE /* SwiftStompClient.swift in Sources */,
+				376285E02BCC8DF400B7F9AE /* BasicCommands.swift in Sources */,
+				376285E12BCC8DF400B7F9AE /* AckMode.swift in Sources */,
+				376285E22BCC8DF400B7F9AE /* AbortStompFrame.swift in Sources */,
+				376285E32BCC8DF400B7F9AE /* DisconnectStompFrame.swift in Sources */,
+				376285E42BCC8DF400B7F9AE /* BeginStompFrame.swift in Sources */,
+				376285E52BCC8DF400B7F9AE /* FrameResponseKeys.swift in Sources */,
+				376285E62BCC8DF400B7F9AE /* PingStompFrame.swift in Sources */,
+				376285E72BCC8DF400B7F9AE /* SubscribeStompFrame.swift in Sources */,
+				376285E82BCC8DF400B7F9AE /* CommitStompFrame.swift in Sources */,
+				376285E92BCC8DF400B7F9AE /* WebSocketService.swift in Sources */,
+				376285EA2BCC8DF400B7F9AE /* StompFrameProtocol.swift in Sources */,
+				376285EB2BCC8DF400B7F9AE /* UnsubscribeStompFrame.swift in Sources */,
+				376285EC2BCC8DF400B7F9AE /* AckStompFrame.swift in Sources */,
+				376285ED2BCC8DF400B7F9AE /* HeaderCommands.swift in Sources */,
+				376285EE2BCC8DF400B7F9AE /* SendStompFrame.swift in Sources */,
 				3732220C24E303940004C746 /* ViewController.swift in Sources */,
-				3732222924E306700004C746 /* UnsubscribeStompFrame.swift in Sources */,
-				3732222124E306700004C746 /* DisconnectStompFrame.swift in Sources */,
-				3723104B2B7117090014D957 /* FrameResponseKeys.swift in Sources */,
-				3732222824E306700004C746 /* SubscribeStompFrame.swift in Sources */,
 				3732220824E303940004C746 /* AppDelegate.swift in Sources */,
-				3732221E24E306700004C746 /* BeginStompFrame.swift in Sources */,
-				3732222024E306700004C746 /* ConnectStompFrame.swift in Sources */,
-				3732222A24E306700004C746 /* WebSocketService.swift in Sources */,
-				3732221B24E306700004C746 /* AckMode.swift in Sources */,
-				3732222424E306700004C746 /* PingStompFrame.swift in Sources */,
-				3732221C24E306700004C746 /* AckStompFrame.swift in Sources */,
-				3732221A24E306700004C746 /* AbortStompFrame.swift in Sources */,
-				3732222524E306700004C746 /* SendStompFrame.swift in Sources */,
 				3732220A24E303940004C746 /* SceneDelegate.swift in Sources */,
-				3732222224E306700004C746 /* HeaderCommands.swift in Sources */,
-				3732222324E306700004C746 /* HeartBeatService.swift in Sources */,
-				3732221F24E306700004C746 /* CommitStompFrame.swift in Sources */,
-				3732222724E306700004C746 /* StompFrameProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +489,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftStompClient/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -524,7 +526,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftStompClient/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

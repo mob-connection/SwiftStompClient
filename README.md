@@ -83,6 +83,8 @@ func handle(error: SwiftStompError)
 ```
 is called when receive any errors
 
+### For more detail please check ```SwiftStompClientExample```
+
 ## Installation
 
 ### CocoaPods
