@@ -17,6 +17,7 @@ Swift [STOMP](https://stomp.github.io) client for swift via [WebSocketTask](http
 ## Example using StompClient
 
 ```swift
+
 let webSocket: WebSocketService = WebSocketManager(request: URLRequest(url: NetworkConstants.baseSTOMP))
 let heartBeat: HeartBeatService = HeartBeatManager(clientHeartBeating: "2000,5000", clientSendingLeeway: 0.0)
 let stompClient: SwiftStompClient = .init(webSocket: webSocket, heartBeat: heartBeat)
