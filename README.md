@@ -5,7 +5,7 @@ Swift [STOMP](https://stomp.github.io) client for swift via [WebSocketTask](http
 ## Requirements
 
  - iOS 15.0+
- - macOS 12.00+
+ - macOS 12.0+
  - tvOS 15.0+
  - watchOS 8.0+
 
