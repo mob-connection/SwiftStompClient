@@ -94,6 +94,7 @@ dependencies: [
     .package(url: "https://github.com/mob-connection/SwiftStompClient.git", .upToNextMajor(from: "0.0.8"))
 ]
 ````
+or (if needed)
 
 ```swift
 .product(name: "SwiftStompClientDynamic", package: "SwiftStompClient")
