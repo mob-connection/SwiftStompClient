@@ -1,35 +1,41 @@
 public struct SendStompFrame: StompFrameProtocol {
-    public var command: String {
-        return BasicCommands.send
-    }
-    public var headers: [String : String]
-    public var body: String?
-    
-    ///STOMP frame SEND with
-    /// - Parameters:
-    ///     - body: string body
-    ///     - destination: destination
-    ///     - headers: optional headers
-    ///     - transaction: transaction
-    public init(body: String, destination: String, headers: [String : String]?, transaction: String?) {
-        var sendHeaders = [String : String]()
+	public var command: String {
+		BasicCommands.send
+	}
+	public var headers: [String : String]
+	public var body: String?
 
-        if let additionalHeaders = headers {
-            sendHeaders = additionalHeaders
-        }
+	///STOMP frame SEND with
+	/// - Parameters:
+	///     - body: string body
+	///     - destination: destination
+	///     - headers: optional headers
+	///     - transaction: transaction
+	public init(
+		body: String,
+		destination: String,
+		headers: [String : String]?,
+		transaction: String?
+	) {
+		var sendHeaders = [String : String]()
 
-        if let transaction = transaction {
-            sendHeaders[HeaderCommands.transaction] = transaction
-        }
+		if let additionalHeaders = headers {
+			sendHeaders = additionalHeaders
+		}
 
-        if !sendHeaders.contains(where: { $0.key == HeaderCommands.contentType }) {
-            sendHeaders[HeaderCommands.contentType] = "text/plain"
-        }
+		if let transaction = transaction {
+			sendHeaders[HeaderCommands.transaction] = transaction
+		}
 
-        sendHeaders[HeaderCommands.destination] = destination
-        sendHeaders[HeaderCommands.contentLength] = "\(body.utf8.count)"
+		if !sendHeaders.contains(where: { $0.key == HeaderCommands.contentType }) {
+			sendHeaders[HeaderCommands.contentType] = "text/plain"
+		}
 
-        self.headers = sendHeaders
-        self.body = body
-    }
+		sendHeaders[HeaderCommands.destination] = destination
+		sendHeaders[HeaderCommands.contentLength] = "\(body.utf8.count)"
+
+		self.headers = sendHeaders
+		self.body = body
+	}
+
 }

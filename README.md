@@ -1,46 +1,88 @@
 # SwiftStompClient
-SwiftStompClient it's implementation [STOMP](https://stomp.github.io) on native [WebSocket](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) started support from iOS 13
+
+Swift [STOMP](https://stomp.github.io) client for swift via [WebSocketTask](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) with [Heart-beating](https://stomp.github.io/stomp-specification-1.2.html#Heart-beating)
 
 ## Requirements
- - iOS 13.0+
- - macOS 10.15+
- - Mac Catalyst 13.0+
- - tvOS 13.0+
- - watchOS 6.0+
- 
+
+ - iOS 15.0+
+ - macOS 12.00+
+ - tvOS 15.0+
+ - watchOS 8.0+
+
+## Features
+
+- [x] Heart beat
+- [x] Auto Reconnect
+
 ## Example using StompClient
-```swift
-let request = URLRequest(url: "wss://,ws://")
-let webSocket = WebSocket(request: request)
-let heartBeat = HeartBeat(clientHeartBeating: "2000,5000")
-let stompClient = SwiftStompClient(webSocket: webSocket, heartBeat: heartBeat)
+
+```swift let webSocket: WebSocketService = WebSocketManager(request: URLRequest(url: NetworkConstants.baseSTOMP))
+let heartBeat: HeartBeatService = HeartBeatManager(clientHeartBeating: "2000,5000", clientSendingLeeway: 0.0)
+let stompClient: SwiftStompClient = .init(webSocket: webSocket, heartBeat: heartBeat)
 
 stompClient.stompDelegate = self
-stompClient.openWebSocketConnection()
+try await stompClient.openWebSocketConnection()
 ```
 
-```request``` request must contain ws:// or wss://
+## WebSocketService
 
-```webSocket``` webSocket connection for sending STOMP frames
+native webSocket implementation via ```swift URLSessionWebSocketTask```
 
-```heartBeat``` heartBeat optinal parameter for reciving pong frame and sending ping frame, init with string "2000,5000" where 2000 (in milliseconds) time to sending ping frame to server, 5000 wating handling pong frame from server, for more detail visit [Heart-beating](https://stomp.github.io/stomp-specification-1.2.html#Heart-beating)
+## HeartBeatService
 
-```stompDelegate``` implement handling webSocket connection/disconnection, resiving frames ```CONNECTED, MESSAGE, RECEIPT, ERROR, \n```
+optinal service for receiving pong frame from server and sending ping frame to server, initialisation with the string ```clientHeartBeating: 2000,5000``` where ``2000`` (in milliseconds) is the time to send a ping frame to the server ```5000``` is the time to wait for the ping frame to be received from the server, ```clientSendingLeeway``` this is the time we set aside for sending a ping frame, for more information please visit [Heart-beating](https://stomp.github.io/stomp-specification-1.2.html#Heart-beating)
 
-```openWebSocketConnection()``` open webSocket connection, handle opening webSocket ```func handleWebSocketConnect(session: URLSession, webSocketTask: URLSessionWebSocketTask, didOpenWithProtocol: String?)``` then you can use ```sendFrame(frame: StompFrameProtocol)```
+## SwiftStompClient
 
-```closeWebSocketConnection()``` disconnect webSocket connection, handle disconnect webSocket ```func handleWebSocketDisconnect(session: URLSession, webSocketTask: URLSessionWebSocketTask, closeCode: URLSessionWebSocketTask.CloseCode, reason: Data?)```
+service that implements [STOMP](https://stomp.github.io)
 
-```sendFrame(frame: StompFrameProtocol)``` send STOMP frame via websocket, for sending custom frame (if needed) just subsribe object to `StompFrameProtocol`
+```swift
+openWebSocketConnection()
+```
+connect webSocket
 
-## STOMP server example
-open terminal run 
-`$ java -jar stomp-server.jar`
-server works on 
-`ws://127.0.0.1:8080/ws`
+```swift
+disconnectWebSocket(code: Int, reason: Data?)
+```
+disconnect webSocket
+
+```swift
+reconnectWebSocket(nanoseconds: UInt64)
+```
+reconnect webSocket
+
+```swift
+sendFrame(frame: StompFrameProtocol)
+```
+send STOMP frames
+
+## StompDelegate
+
+```func webSocketConnected()``` 
+is called when a webSocket connection is opened
+
+```swift
+func receiveStomp(
+    frame: SwiftStompClient,
+    type: FrameResponseKeys,
+    headers: [String : String],
+    body: String?
+)
+```
+is called when any frame is received
+
+```swift
+func webSocketDisconnected(closeCode: Int, reason: Data?)
+```
+is called when the webSocket is closed
+
+```swift
+func handle(error: SwiftStompError)
+```
+is called when receive any errors
 
 ## Installation
+
 ### CocoaPods
-`
-pod 'SwiftStompClient', '~> 0.0.5'
-`
+
+```pod 'SwiftStompClient'```

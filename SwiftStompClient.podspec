@@ -1,26 +1,23 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SwiftStompClient"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "STOMP implementation on native WebSocket in Swift"
-  
-    spec.description  = <<-DESC
-STOMP implementation with optional heart-beating iOS 13.0+ macOS 10.15+ Mac Catalyst 13.0+ tvOS 13.0+ watchOS 6.0+
-                     DESC
-
+  spec.description  = <<-DESC
+Swift [STOMP](https://stomp.github.io) client for swift via [WebSocketTask](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) with [Heart-beating](https://stomp.github.io/stomp-specification-1.2.html#Heart-beating) iOS 15.0+ macOS 12.0+ tvOS 15.0+ watchOS 8.0+
+DESC
   spec.homepage     = "https://github.com/mob-connection/SwiftStompClient"
-
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "mob-connection" => "ozhurbaiosdevelop@gmail.com" }
 
-  spec.ios.deployment_target = "13.0"
-  spec.osx.deployment_target = '10.15'
-  spec.tvos.deployment_target = '13.0'
-  spec.watchos.deployment_target = '6.0'
-  
-  spec.swift_version = "5.1"
+  spec.ios.deployment_target = "15.0"
+  spec.osx.deployment_target = '12.0'
+  spec.tvos.deployment_target = '15.0'
+  spec.watchos.deployment_target = '8.0'
 
-  spec.source        = { :git => "https://github.com/mob-connection/SwiftStompClient.git", :tag => "#{spec.version}" }
+  spec.swift_version = "5.5"
+  spec.source = { :git => "https://github.com/mob-connection/SwiftStompClient.git", :tag => "#{spec.version}" }
   spec.source_files  = "SwiftStompClient/**/*.{h,m,swift}"
+  spec.resource_bundles = {'SwiftStompClient' => ['SwiftStompClient/PrivacyInfo.xcprivacy']}
 
 end
