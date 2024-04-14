@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SwiftStompClient"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "STOMP implementation on native WebSocket in Swift"
   spec.description  = <<-DESC
 Swift [STOMP](https://stomp.github.io) client for swift via [WebSocketTask](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) with [Heart-beating](https://stomp.github.io/stomp-specification-1.2.html#Heart-beating) iOS 15.0+ macOS 12.0+ tvOS 15.0+ watchOS 8.0+
