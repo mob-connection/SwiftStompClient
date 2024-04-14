@@ -87,6 +87,18 @@ is called when receive any errors
 
 ## Installation
 
+### Swift Package Manager
+
+``` swift
+dependencies: [
+    .package(url: "https://github.com/mob-connection/SwiftStompClient.git", .upToNextMajor(from: "0.0.8"))
+]
+````
+
+```swift
+.product(name: "SwiftStompClientDynamic", package: "SwiftStompClient")
+```
+
 ### CocoaPods
 
 ```pod 'SwiftStompClient'```
