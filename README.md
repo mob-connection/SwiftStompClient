@@ -5,7 +5,7 @@ Swift [STOMP](https://stomp.github.io) client for swift via [WebSocketTask](http
 ## Requirements
 
  - iOS 15.0+
- - macOS 12.00+
+ - macOS 12.0+
  - tvOS 15.0+
  - watchOS 8.0+
 
@@ -38,25 +38,23 @@ optinal service for receiving pong frame from server and sending ping frame to s
 
 service that implements [STOMP](https://stomp.github.io)
 
+connect webSocket
 ```swift
 openWebSocketConnection()
 ```
-connect webSocket
-
+disconnect webSocket
 ```swift
 disconnectWebSocket(code: Int, reason: Data?)
 ```
-disconnect webSocket
-
+reconnect webSocket
 ```swift
 reconnectWebSocket(nanoseconds: UInt64)
 ```
-reconnect webSocket
 
+send STOMP frames
 ```swift
 sendFrame(frame: StompFrameProtocol)
 ```
-send STOMP frames
 
 ## StompDelegate
 
